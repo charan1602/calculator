@@ -1,0 +1,46 @@
+.main_container{
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: 1; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 1px solid black;
+    background: linear-gradient(to right,green,blue,green);
+
+}
+.display{
+    width: 108px;
+    border: 1px solid black;
+}
+.btn_container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.plus{
+    grid-area: 3/4/span 2;
+}
+.zero{
+    grid-area: 5/1/span 1/span 2;
+}
+.equal{
+    grid-area: 5/3/span 1/span 2;
+}
+/* .btn_container button{
+    height: 60px;
+    width: 60px;
+} */
+.ans{
+   /* grid-area: 1/1/span 1/span 4; */
+   background-color: antiquewhite;
+   /* padding-right: 10px; */
+   /* justify-self: end; */
+   height: 20px;
+}
+.input{
+    /* grid-area: 2/1/span 1/span 4; */
+    background-color: bisque;
+    /* padding-right: 10px; */
+      /* justify-self: end; */
+      height: 20px;
+}
