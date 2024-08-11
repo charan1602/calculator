@@ -16,13 +16,13 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
-.plus{
+#plus{
     grid-area: 5/4/span 2;
 }
-.zero{
+/* .zero{
     grid-area: 7/1/span 1/span 2;
-}
-.equal{
+} */
+#equal{
     grid-area: 7/3/span 1/span 2;
 }
 /* .btn_container button{
