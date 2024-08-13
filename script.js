@@ -41,14 +41,20 @@ clear.addEventListener("click",()=>{
 // EQUAL FUNCTION
 let ops = document.getElementById("equal")
 ops.addEventListener("click",()=>{
-    let result = eval(currentinp)
-    // console.log(result)
-    // let final_output = result.toString()
-
-    // let output = document.getElementById("ans")
-    output.value = result
-    // console.log(typeof(output.value))
-    output.innerText = output.value
+    try {
+        let result = eval(currentinp)
+        // console.log(result)
+        // let final_output = result.toString()
+    
+        // let output = document.getElementById("ans")
+        output.value = result
+        // console.log(typeof(output.value))
+        output.innerText = output.value 
+    } catch (error) {
+        error = "Enter a valid Expression"
+        output.value = error
+        output.innerText = output.value 
+    }
 })
 
 

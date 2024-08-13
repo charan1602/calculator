@@ -24,10 +24,12 @@
 } */
 #equal{
     grid-area: 7/3/span 1/span 2;
+    background-color: rgb(208, 208, 46);
 }
 .btn_container button{
     height: 100%;
     width: 100%;
+    border-radius: 5px;
 }
 #ans{
    /* grid-area: 1/1/span 1/span 4; */
@@ -35,20 +37,23 @@
    /* padding-top: 3px; */
    /* justify-self: end; */
    text-align: right;
+   border-radius: 5px;
    border: 1px solid black ;
    height: 40px;
+   font-size: 19px;
    /* position: absolute; */
 }
 .input{
     /* grid-area: 2/1/span 1/span 4; */
-    background-color: bisque;
+    /* background-color: bisque; */
     text-align: right;
+    border-radius: 5px;
     /* padding-right: 10px; */
       /* justify-self: end; */
       /* height: 20px; */
 }
 #pad ,#pad2 , #pad3 ,#pad4 ,#pad5 ,#input_container{
-    padding: 10px 10px 10px 10px;
+    padding: 15px 15px 15px 15px;
    
 }
 .opearator,.number,#all_clear,#clear{
@@ -57,4 +62,10 @@
 }
 #input_container{
     text-align: right;
+}
+#all_clear{
+    background-color: rgb(243, 147, 58);
+}
+#clear{
+    background-color:rgb(249, 171, 171) ;
 }
