@@ -14,6 +14,8 @@
  let all_clear = document.getElementById("all_clear")
  let clear = document.getElementById("clear")
  let nums = document.querySelectorAll(".number")
+ let output = document.getElementById("ans")
+//  console.log(nums)
  let currentinp = ""
  nums.forEach((num) => {
     num.addEventListener("click",()=>{
@@ -40,10 +42,11 @@ clear.addEventListener("click",()=>{
 let ops = document.getElementById("equal")
 ops.addEventListener("click",()=>{
     let result = eval(currentinp)
-    console.log(result)
-    let final_output = result.toString()
-    let output = document.getElementById("ans")
-    output.value = final_output
+    // console.log(result)
+    // let final_output = result.toString()
+
+    // let output = document.getElementById("ans")
+    output.value = result
     // console.log(typeof(output.value))
     output.innerText = output.value
 })
@@ -55,8 +58,8 @@ all_clear.addEventListener("click",()=>{
     currentinp = ""
     input1.value = currentinp
     input1.innerText = input1.value
-    final_output = ""
-    output.value = final_output
-    output.innerText = output.value
+    // final_output = ""
+    // output.value = final_output
+    output.innerText = ""
  }
 )
